@@ -1,4 +1,4 @@
-package com.detolv.myautocompletetv;
+package com.detolv.myautocompletetv.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;

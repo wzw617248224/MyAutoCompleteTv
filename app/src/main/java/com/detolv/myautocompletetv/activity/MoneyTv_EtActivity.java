@@ -8,7 +8,7 @@ import android.text.Spanned;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
-import com.detolv.myautocompletetv.MoneyTextView;
+import com.detolv.myautocompletetv.widget.MoneyTextView;
 import com.detolv.myautocompletetv.R;
 
 import butterknife.BindView;

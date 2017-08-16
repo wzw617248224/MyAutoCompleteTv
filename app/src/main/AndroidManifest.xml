@@ -23,6 +23,7 @@
         <activity android:name=".activity.MoneyTv_EtActivity" />
         <activity android:name=".activity.AutoTextViewActivity" />
         <activity android:name=".activity.HttpActivity"></activity>
+        <activity android:name=".activity.CheckBoxActivity"></activity>
 
         <!-- BroadcastReceiver that listens for incoming SMS messages -->
         <receiver android:name=".sms.SmsReceiver"

@@ -9,7 +9,7 @@ import fi.iki.elonen.NanoHTTPD;
  */
 
 public class NanoHttpServer extends NanoHTTPD {
-    public static final int DEFAULT_SERVER_PORT = 8080;
+    public static final int DEFAULT_SERVER_PORT = 9000;
     private IInsertSmsListener iInsertSmsListener;
 
     public void setiInsertSmsListener(IInsertSmsListener iInsertSmsListener) {

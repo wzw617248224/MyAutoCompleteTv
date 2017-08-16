@@ -32,4 +32,9 @@ public class MainActivity extends Activity {
     void onNanoHttpServerClick() {
         HttpActivity.navigateTo(this);
     }
+
+    @OnClick(R.id.CustomCheckbox)
+    void onCustomCheckboxClick() {
+        CheckBoxActivity.navigateTo(this);
+    }
 }
