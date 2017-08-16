@@ -20,6 +20,8 @@ public class DrawableCheckBox extends CheckBox {
     private Drawable mDrawable;
 
     private int mLocation;
+    private boolean hasDrawed;
+    private int textSize = 46;
 
     public DrawableCheckBox(Context context) {
         super(context);
@@ -46,13 +48,14 @@ public class DrawableCheckBox extends CheckBox {
 
         a.recycle();
         //绘制Drawable宽高,位置
-        drawDrawable(mDrawable, mWidth, mHeight);
+        drawDrawable(mDrawable, mWidth, mHeight, textSize);
     }
 
-    private void drawDrawable(Drawable drawable, int mWidth, int mHeight) {
+    private void drawDrawable(Drawable drawable, int width, int height, int textSize) {
         if (drawable != null) {
             //设置drawable对象的大小
-            drawable.setBounds(0,0,mWidth,mHeight);
+            int offsetVertical = (textSize - height)/2;
+            drawable.setBounds(0, offsetVertical, width, height + offsetVertical);
             switch (mLocation) {
                 case LEFT:
                     this.setCompoundDrawables(drawable, null, null, null);
@@ -67,29 +70,7 @@ public class DrawableCheckBox extends CheckBox {
                     this.setCompoundDrawables(null, null, null, drawable);
                     break;
             }
+            hasDrawed = true;
         }
-        invalidate();
     }
-//
-//    /**
-//     * 缩放图片
-//     *
-//     * @param bm
-//     * @param newWidth
-//     * @param newHeight
-//     * @return
-//     */
-//    public Bitmap getBitmap(Bitmap bm, int newWidth, int newHeight) {
-//        // 获得图片的宽高
-//        int width = bm.getWidth();
-//        int height = bm.getHeight();
-//        // 计算缩放比例
-//        float scaleWidth = (float) newWidth / width;
-//        float scaleHeight = (float) newHeight / height;
-//        // 取得想要缩放的matrix参数
-//        Matrix matrix = new Matrix();
-//        matrix.postScale(scaleWidth, scaleHeight);
-//        // 得到新的图片
-//        return Bitmap.createBitmap(bm, 0, 0, width, height, matrix, true);
-//    }
 }
