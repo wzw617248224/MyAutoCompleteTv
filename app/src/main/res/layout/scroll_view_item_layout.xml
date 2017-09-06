@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MyListItemStyle"
+    >
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/MyTextViewStyle"
+        android:text="1"
+        />
+
+    <EditText
+        android:id="@+id/number_et"
+        style="@style/MyEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_45_dip"
+        android:background="@null"
+        android:gravity="left"
+        android:maxLength="16"
+        android:singleLine="true"
+        android:textColor="@color/one_level_gray"
+        android:inputType="textPersonName"
+        android:hint="请填写"
+        />
+
+</LinearLayout>

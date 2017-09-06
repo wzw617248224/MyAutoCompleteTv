@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 需要Padding的状态栏高度，使用默认 dp！ -->
+    <dimen name="top_view_status_bar_padding">25.0dp</dimen>
+
+</resources>

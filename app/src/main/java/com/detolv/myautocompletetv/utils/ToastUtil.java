@@ -1,7 +1,9 @@
-package com.detolv.myautocompletetv;
+package com.detolv.myautocompletetv.utils;
 
 import android.app.Activity;
 import android.widget.Toast;
+
+import com.detolv.myautocompletetv.ApplicationContext;
 
 /**
  * Created by detolv on 8/13/17.

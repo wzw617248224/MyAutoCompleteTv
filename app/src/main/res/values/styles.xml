@@ -8,7 +8,7 @@
         <item name="android:colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="KaNiu.CheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+    <style name="CheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:button">@null</item>
         <item name="android:drawableLeft">@drawable/common_checkbox</item>
         <item name="android:textSize">12sp</item>
@@ -18,4 +18,27 @@
         <item name="android:checked">true</item>
     </style>
 
+    <style name="MyListItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_55_dip</item>
+        <item name="android:paddingLeft">@dimen/dimen_15_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_15_dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="MyEditTextStyle">
+        <item name="android:textColor">@color/two_level_gray</item>
+        <item name="android:textSize">@dimen/dimen_13_dip</item>
+        <item name="android:textColorHint">@color/light_level_gray</item>
+        <item name="android:paddingTop">@dimen/dimen_6_dip</item>
+        <item name="android:paddingBottom">@dimen/dimen_6_dip</item>
+    </style>
+
+    <style name="MyTextViewStyle">
+        <item name="android:textColor">@color/two_level_gray</item>
+        <item name="android:textSize">@dimen/dimen_13_dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 </resources>

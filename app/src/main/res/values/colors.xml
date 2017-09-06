@@ -1,6 +1,381 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+<color name="colorPrimary">#3F51B5</color>
+<color name="colorPrimaryDark">#303F9F</color>
+<color name="colorAccent">#FF4081</color>
+<color name="theme_color_bg_0">#efdabc</color>
+<color name="theme_color_bg_1">#f5c361</color>
+<color name="theme_color_bg_2">#8ea8d9</color>
+<color name="theme_color_bg_3">#c2aed3</color>
+<color name="theme_color_bg_4">#f17a72</color>
+<color name="theme_color_bg_5">#f2dfc2</color>
+<color name="theme_color_bg_6">#edd1c6</color>
+<color name="theme_color_bg_custom">#ebebeb</color>
+
+
+<color name="theme_color_text_0">#a15409</color>
+<color name="theme_color_text_1">#8a4a06</color>
+<color name="theme_color_text_2">#2c4f76</color>
+<color name="theme_color_text_3">#695d82</color>
+<color name="theme_color_text_4">#ffffff</color>
+<color name="theme_color_text_5">#9c4d14</color>
+<color name="theme_color_text_6">#9b6651</color>
+<color name="theme_color_text_custom">#ffffff</color>
+
+
+<color name="theme_color_title_text_0">#7c4309</color>
+<color name="theme_color_title_text_1">#8a4a06</color>
+<color name="theme_color_title_text_2">#2c4f76</color>
+<color name="theme_color_title_text_3">#625678</color>
+<color name="theme_color_title_text_4">#ffffff</color>
+<color name="theme_color_title_text_5">#894210</color>
+<color name="theme_color_title_text_6">#9b6651</color>
+<color name="theme_color_title_text_custom">#ffffff</color>
+
+<color name="theme_color_wether_text_0">#ffffff</color>
+<color name="theme_color_wether_text_1">#f09135</color>
+<color name="theme_color_wether_text_2">#6a8aac</color>
+<color name="theme_color_wether_text_3">#83769a</color>
+<color name="theme_color_wether_text_4">#ffffff</color>
+<color name="theme_color_wether_text_5">#8a4800</color>
+<color name="theme_color_wether_text_6">#8a4800</color>
+<color name="theme_color_wether_text_custom">#ffffff</color>
+
+<color name="theme_color_applycard_text_0">#aa8146</color>
+<color name="theme_color_applycard_text_1">#a46808</color>
+<color name="theme_color_applycard_text_2">#43567b</color>
+<color name="theme_color_applycard_text_3">#746680</color>
+<color name="theme_color_applycard_text_4">#b4423b</color>
+<color name="theme_color_applycard_text_5">#aa8146</color>
+<color name="theme_color_applycard_text_6">#8f6147</color>
+<color name="theme_color_applycard_text_custom">#ffffff</color><!-- 该值会根据图片改变-->
+<color name="theme_color_applycard_text_custom_white">#ccffffff</color><!-- 该值会根据图片改变-->
+<color name="theme_color_applycard_text_custom_black">#bb000000</color><!-- 该值会根据图片改变-->
+
+
+<color name="theme_color_eyeicon_0">#ffffff</color>
+<color name="theme_color_eyeicon_1">#f09135</color>
+<color name="theme_color_eyeicon_2">#6a8aae</color>
+<color name="theme_color_eyeicon_3">#83769a</color>
+<color name="theme_color_eyeicon_4">#ffffff</color>
+<color name="theme_color_eyeicon_5">#8a4800</color>
+<color name="theme_color_eyeicon_6">#91634b</color>
+<color name="theme_color_eyeicon_custom">#ffffff</color>
+<!-- 卡牛简版规范 -->
+<color name="secondary_gray">#757575</color>
+
+
+<color name="black1">#333333</color>
+<color name="black2">#666666</color>
+<color name="black3">#3d3d3d</color>
+<color name="black4">#646464</color>
+<color name="white1">#D9D1C5</color>
+<color name="account_child_expend">#14bb8a</color>
+<color name="account_child_income">#f85d5d</color>
+<color name="bill_item_balance">#565656</color>
+<color name="bill_item_bg">#e3bf9b</color>
+<color name="transparent">#00000000</color>
+<color name="half_transparent">#70000000</color>
+<color name="half_transparent_white">#dcffffff</color>
+<color name="little_transparent">#20000000</color>
+<color name="black_red">#871909</color>
+
+<!-- common item bg -->
+<drawable name="transparent_drawable">#00000000</drawable>
+<drawable name="common_item_bg_pressed">#fffff8d7</drawable>
+<drawable name="common_item_bg_normal">#fff5f5f5</drawable>
+
+
+<color name="widget_dialog_item_bright_foreground_light">#ff000000</color>
+
+<color name="widget_alert_dialog_msg_text">#2f2e2e</color>
+
+<!-- TextEdit 行线色值 -->
+<color name="line_edittext_color">#E3E0D9</color>
+
+
+<!-- 卡片详情界面颜色 -->
+<color name="cardaccount_header_title_text_color">#442600</color>
+<color name="cardaccount_text_black">#4f4f4f</color>
+<color name="cardaccount_text_light_black">#979797</color>
+<color name="cardaccount_text_line_black">#f0f0f0</color>
+<color name="cardaccount_header_tab_bg_black">#f0f0f0</color>
+<color name="cardaccount_header_nav_bg_yellow">#fb814d</color>
+<color name="cardaccount_progressbar_yellow">#ffdc1d</color>
+
+<!-- 分类报表圆形视图相关色值 -->
+<color name="reportcircle_background">#D4D4D4</color>
+<color name="reportcircle_inner_circle">#efefef</color>
+
+<!-- 常用颜色列表 -->
+<color name="white">#FFFFFF</color>
+<color name="orange">#FFA500</color>
+<color name="darkorange">#FF8C00</color>
+<color name="red">#FF0000</color>
+<!-- 红色 -->
+<color name="whitesmoke">#F5F5F5</color>
+<color name="whitesmoke_with_alpha">#A5F5F5F5</color>
+<!-- 烟白色 -->
+<color name="lightgray">#D3D3D3</color>
+<!-- 亮灰色 -->
+<color name="gray">#808080</color>
+<!-- 灰色 -->
+<color name="grey">#808080</color>
+
+<color name="grey_f0">#f0f0f0</color>
+<color name="grey_af">#afafaf</color>
+<!-- 灰色 -->
+<color name="maroon">#800000</color>
+<!-- 粟色 -->
+<color name="dimgrey">#696969</color>
+<!-- 暗灰色 -->
+<color name="blue">#0000FF</color>
+<!-- 蓝色 -->
+<color name="black">#000000</color>
+<!-- 黑色 -->
+<color name="toast_text_color">#2c2521</color>
+
+<drawable name="common_bg">#fff5f5f5</drawable>
+<drawable name="dialog_bg">#88000000</drawable>
+<color name="white_trans">#E5FFFFFF</color>
+<color name="white_trans_f5">#F5FFFFFF</color>
+
+<color name="common_content_text_color">#323232</color>
+<color name="common_text_hint_color">#c7c7c7</color>
+
+<color name="listview_item_text">#505050</color>
+<color name="common_list_item_bg_pressed">#ECECEC</color>
+<color name="divider_color">#266c6c6c</color>
+<color name="light_black">#505050</color>
+<color name="light_gray">#5c5c5c</color>
+<color name="gray_82">#828282</color>
+<color name="gray_a5">#a5a5a5</color>
+<color name="gray_c8">#c8c8c8</color>
+<color name="gray_ee">#eeeeee</color>
+<color name="gray_f5">#f5f5f5</color>
+<color name="gray_bg">#ECECEC</color>
+<color name="gray_bg_alpha">#AA000000</color>
+<color name="gray_empty_view_text">#bfbfbf</color>
+<color name="gray_chart">#e4e5ea</color>
+<color name="gray_feedback">#88888f</color>
+<color name="gray_changable_money_item">#c2c2c4</color>
+<color name="readed_messaeg_bg_color">#f5f5f5</color>
+<color name="webview_top_nav_bar_color">#fbfbfb</color>
+
+<color name="title_buttom_line">#cbcbcb</color>
+<color name="shadown_1">#CFCFCF</color>
+<color name="shadown_3">#F7F7F7</color>
+
+<color name="editText_input">#373737</color>
+<color name="editText_hint">#aaaaaa</color>
+<color name="trans_out_green">#6db136</color>
+<color name="trans_in_red">#da5757</color>
+
+<!-- 随手记刷新数据源界面 -->
+<color name="refresh_status_wait">#ff9f9f9f</color>
+<color name="refresh_status_normal">#ff505050</color>
+<color name="black31">#ff313131</color>
+
+<color name="ebank_import_type_selected">#ffffffff</color>
+<color name="ebank_import_type_unselected">#ffFF8A00</color>
+
+<!-- 日历下面标题已读与未读色值 -->
+<color name="calendar_message_hasread_color">#828282</color>
+<color name="calendar_message_unread_color">#323232</color>
+
+<!-- 自定义支付宝还款控件色值 -->
+<color name="repaystate_drak_color">#c8c8c8</color>
+<color name="repaystate_light_color">#F88C00</color>
+<color name="repaybutton_color">#f85d06</color>
+<color name="repay_all_btn">#389356</color>
+<color name="repay_importbill_btn">#f95c06</color>
+<color name="repay_state_part_repay">#4c71a8</color>
+<color name="repay_state_update_bill">#e23833</color>
+
+<!-- simple listview item color -->
+<color name="title_color">#333333</color>
+<color name="sub_title_color">#999999</color>
+<color name="right_title_color">#333333</color>
+
+<!-- 左侧常用灰色颜色 -->
+<color name="leftframe_graycolor">#bf323232</color>
+
+<!-- 行间分割线颜色 -->
+<color name="common_item_line_bg">#ffe8e8e8</color>
+
+<!--用户中心颜色-->
+<color name="lable_color_black">#ff666666</color>
+<color name="value_color_black">#ff808080</color>
+<color name="usercenterbg">#fff0f0f0</color>
+
+<!-- 新版更新的颜色都放在下面 -->
+<color name="set_item_title">#323232</color>
+<color name="set_item_sub_title">#838383</color>
+<color name="set_item_summary_title">#818181</color>
+<color name="set_item_summary_title_bg">#f0f0f0</color>
+
+<!-- SlideSwitchButton -->
+<color name="switch_border_color">#e86464</color>
+<color name="switch_off_color">#e4e4e4</color>
+<color name="switch_on_color">#4cd964</color>
+
+
+
+<color name="background_tab_pressed">#6633B5E5</color>
+
+<!--collapse calendar -->
+<color name="text_normal">#ffdbdb</color>
+<color name="text_num">#ffffff</color>
+<color name="text_light">#4cffffff</color>
+<color name="text_select">#dd2e36</color>
+
+<color name="blue_dark">#ccffffff</color>
+<color name="stroke">#77d4f6</color>
+<color name="calendar_bg">#fb814d</color>
+<color name="card_detail_day_color">#fb8f69</color>
+<!--collapse calendar -->
+
+<color name="main_theme_color">#fb814d</color>
+<color name="accumulation_fund_title_bg">#fe854c</color>
+<color name="main_theme_color_tran">#F0fb814d</color>
+
+
+<color name="popup_way_background_color">#FEF3EF</color>
+<color name="tab_strip_background_color">#f5f5f5</color>
+<color name="tab_strip_background_tran_color">#F2f5f5f5</color>
+<color name="tab_strip_underline_color">#ebebeb</color>
+<color name="orange_text_color">#f95c06</color>
+<color name="orange_button_color">#ff9251</color>
+<color name="white_button_with_orange_stroke_text_color">#ff9250</color>
+<color name="white_button_with_orange_stroke_text_pressed_color">#f77a2e</color>
+<color name="dialog_orange_button_pressed_color">#f77a2e</color>
+<color name="orange_button_pressed_color">#44ff9251</color>
+<color name="orange_button_60_transparent_color">#99ff9251</color>
+
+<color name="edittext_bottom_line_color">#d0d0d0</color>
+
+<!--2016规范样式颜色-->
+<color name="one_level_gray">#373737</color>
+<color name="two_level_gray">#757575</color>
+<color name="three_level_gray">#8f8f8f</color>
+<color name="remark_level_gray">#aaaaaa</color>
+<color name="light_level_gray">#cccccc</color>
+
+<color name="unclickable_button_text_color">#88ffffff</color>
+<color name="unclickbable_button_color_grey">#e6e6e6</color>
+
+<color name="divider">#dddddd</color>
+
+<!--卡片使用颜色-->
+<color name="card_type_red">#de423f</color>
+<color name="card_type_green">#098632</color>
+<color name="date_paystate_red">#cf4a46</color>
+<color name="date_paystate_blue">#3160b4</color>
+<color name="paystate_oringe">#da611e</color>
+<color name="free_date_diver_line_color">#d4d4d4</color>
+
+<color name="dialog_orange_text_color">#f67b00</color>
+<color name="dialog_orange_background_color">#fef8f5</color>
+<!--网银引导弹窗dialog使用的颜色-->
+<color name="dialog_bank_guide_import_more">#ec964c</color>
+<color name="green_ok_state">#75be7c</color>
+
+<!--卡牛借钱-->
+<color name="info_detail_background_color">#ff9352</color>
+<color name="info_detail_text_color">#ffffff</color>
+<color name="status_text_color">#a5a5a5</color>
+<color name="progress_background_color">#F37946</color>
+<color name="rectangle_color">#FDB676</color>
+<color name="overdue_color">#F35529</color>
+
+<!-- 重点主要按钮的背景色 -->
+<color name="btn_color_main_bg_normal">#fff78b00</color>
+<color name="btn_color_main_bg_pressed">#ffdb8100</color>
+
+<!--新手引导页-->
+<color name="btn_experience_card_niu_text_color">#7b7b7b</color>
+
+<!--京东白条使用颜色-->
+<color name="jd_text_color">#5b5b5b</color>
+<color name="jd_text_white_color">#F9D0C1</color>
+<color name="jd_deep_oringe_color">#f65c08</color>
+<color name="jd_oringe_color">#f7814d</color>
+<color name="jd_oringe_two_color">#fa784b</color>
+<color name="jd_oringe_three_color">#F47F51</color>
+<color name="jd_white_color">#FCF0EC</color>
+<color name="jd_gray_color">#A5A5A5</color>
+<color name="jd_red_color">#F35C57</color>
+<color name="jd_green_color">#93CA62</color>
+
+<color name="pre_approval_limit_start_color">#ff7f25</color>
+<color name="pre_approval_limit_end_color">#ef4f18</color>
+
+<color name="forum_replay_hint">#E6E6E6</color>
+
+
+<!--日历重构模块-->
+<color name="bank_discount_btn_stroke_color">#3160b4</color>
+<color name="border_disable">#a5a5a5</color>
+<color name="title_tv_color">#282828</color>
+<color name="kind_end_date_color">#828282</color>
+<color name="bank_text_color">#586b95</color>
+<color name="divider_spinner">#dfdfdf</color>
+<color name="pink_bg">#fef3ec</color>
+<color name="drop_down_selected">#ff6616</color>
+<color name="drop_down_unselected">#111111</color>
+<color name="mask_color">#88888888</color>
+<color name="check_bg">#f2f2f2</color>
+<color name="un_press_color">#ff6616</color>
+<color name="white_trans_75">#BFFFFFFF</color>
+<color name="black_trans_45">#73111111</color>
+<color name="white_trans_50">#88FFFFFF</color>
+<color name="white_trans_60">#A0FFFFFF</color>
+<color name="black_trans_10">#1A000000</color>
+<color name="today_color">#f46964</color>
+<color name="update_color">#2f64b4</color>
+<color name="spinner_text_color_selected">#ff6616</color>
+
+
+<color name="limit_number_tv_color">#ff734a</color>
+<color name="have_no_limit_tv_color">#e2e2e2</color>
+<color name="have_no_limit_tv_2_color">#c9c9c9</color>
+<color name="have_no_limit_tv_3_color">#8a8989</color>
+<color name="have_no_limit_ly_color">#f7f7f7</color>
+<color name="limit_divide_color">#ffd6c6</color>
+<color name="assets_demo_credit_card_tips">#f4b374</color>
+<color name="import_login_editText_hint">#C5C5C5</color>
+
+<color name="home_balance_tips">#a15409</color>
+<color name="card_edit_gray_bg_color">#F9F9F9</color>
+<color name="lab_bank_near_fav_border">#cdcdcd</color>
+
+<color name="bank_blue">#61b1f2</color>
+<color name="bank_green">#40caab</color>
+<color name="bank_red">#f7625e</color>
+<color name="bank_oringe">#ff804b</color>
+<color name="bank_purple">#9965ed</color>
+
+<color name="bank_tab_blue">#376ECA</color>
+<color name="bank_tab_green">#27A77B</color>
+<color name="bank_tab_red">#F35050</color>
+<color name="bank_tab_oringe">#FF8443</color>
+<color name="bank_tab_purple">#8655EC</color>
+
+
+
+<color name="guide_page_manage_card_btn_text_color">#b0a5fe</color>
+<color name="guide_page_apply_card_btn_text_color">#fd985a</color>
+<color name="guide_page_apply_loan_btn_text_color">#ff8c86</color>
+<color name="guide_page_check_credit_btn_text_color">#90c8fb</color>
+
+<color name="guide_page_dot_select_color">#b5b5b5</color>
+<color name="guide_page_dot_normal_color">#e3e1e1</color>
+<color name="indicator_deep">#c4c4c4</color>
+<color name="indicator_litte">#e0e0e0</color>
+<color name="placeholder_text_color">#b0afaf</color>
+
+<color name="repayment_uncompleted_color">#f6f6f6</color>
+<color name="repayment_popup_color">#1ffb814d</color>
+<color name="repay_divider_color">#ebebee</color>
+
 </resources>

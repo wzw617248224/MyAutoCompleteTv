@@ -11,4 +11,11 @@
             <enum name="bottom" value="4" />
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="CirCleRefreshLayout">
+        <attr name="AniBackColor" format="color" />
+        <attr name="AniForeColor" format="color" />
+        <attr name="CircleSmaller" format="integer"/>
+    </declare-styleable>
+
 </resources>

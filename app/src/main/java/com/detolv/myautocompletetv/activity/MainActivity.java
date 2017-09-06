@@ -37,4 +37,20 @@ public class MainActivity extends Activity {
     void onCustomCheckboxClick() {
         CheckBoxActivity.navigateTo(this);
     }
+
+    @OnClick(R.id.DragView)
+    void onDragViewClick() {
+        DragActivity.navigateTo(this);
+    }
+
+    @OnClick(R.id.ScrollView)
+    void onScrollViewClick() {
+        ScrollViewActivity.navigateTo(this);
+    }
+
+    @OnClick(R.id.CircleRefresh)
+    void onCircleRefreshClick() {
+        CircleRefreshActivity.navigateTo(this);
+    }
+
 }

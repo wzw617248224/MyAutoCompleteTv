@@ -37,5 +37,26 @@
         android:textAllCaps="false"
         android:text="CustomCheckbox"
         />
+    <Button
+        android:id="@+id/DragView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="DragView"
+        />
+    <Button
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ScrollView"
+        />
+    <Button
+        android:id="@+id/CircleRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="CircleRefresh"
+        />
 
 </LinearLayout>

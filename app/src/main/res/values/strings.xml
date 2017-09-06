@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyAutoCompleteTv</string>
+    <string name="title_activity_drag">DragActivity</string>
 </resources>

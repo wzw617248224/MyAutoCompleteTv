@@ -18,7 +18,7 @@ import android.widget.TextView;
 import com.detolv.myautocompletetv.IInsertSmsListener;
 import com.detolv.myautocompletetv.NanoHttpServer;
 import com.detolv.myautocompletetv.R;
-import com.detolv.myautocompletetv.ToastUtil;
+import com.detolv.myautocompletetv.utils.ToastUtil;
 
 import java.io.IOException;
 

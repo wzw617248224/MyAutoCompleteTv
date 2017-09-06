@@ -5,11 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
 import com.detolv.myautocompletetv.widget.MoneyTextView;
 import com.detolv.myautocompletetv.R;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -55,8 +59,31 @@ public class MoneyTv_EtActivity extends Activity {
         });
     }
 
+    /**
+     * 是否正则通过
+     */
+    public static boolean isRegexMatchs(String strTemp, String regex) {
+        if (TextUtils.isEmpty(strTemp) || TextUtils.isEmpty(regex)) {
+            return false;
+        }
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(strTemp);
+        return matcher.matches();
+    }
+
+    public String insertString(String a, CharSequence b, int t){
+        if (t == a.length()){
+            return a + b;
+        }else if (t == 0){
+            return b + a;
+        }else {
+            return a.substring(0, t) + b + a.substring(t, a.length());
+        }
+    }
+
     private class MoneyInputFilter implements android.text.InputFilter {
-        int MAX_DIGIT_LENGTH = 2;
+
+        private int MAX_DIGIT_LENGTH = 6;
 
         @Override
         public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
@@ -64,24 +91,17 @@ public class MoneyTv_EtActivity extends Activity {
             if (dest.length() == 0 && source.equals(".")) {
                 return "0.";
             }
-            //限制小数点后最多输入两位
-            String[] splitArray = dest.toString().split("\\.");
-            if (splitArray.length > 1) {
-                String dotValue = splitArray[1];
-                if (dotValue.length() == MAX_DIGIT_LENGTH) {
-                    return "";
-                }
-            }
-            //最多只能输入一个小数点
-            int count = 0;
-            for (char c : dest.toString().toCharArray()) {
-                if (c == '.') {
-                    count++;
-                }
-            }
-            if (count > 0 && source.equals(".")) {
+
+            String destAfter = insertString(dest.toString(), source, dstart);
+            boolean hasFind = isRegexMatchs(destAfter,"\\d{1,6}(.\\d{0,2})?");
+            if (!hasFind){
                 return "";
             }
+
+            if (!source.equals(".") && dest.toString().length() >= MAX_DIGIT_LENGTH && !destAfter.contains(".")){
+                return "";
+            }
+
             return null;
         }
     }
