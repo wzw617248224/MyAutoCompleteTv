@@ -53,4 +53,9 @@ public class MainActivity extends Activity {
         CircleRefreshActivity.navigateTo(this);
     }
 
+    @OnClick(R.id.BesselView)
+    void onBesselViewClick() {
+        BesselViewActivity.navigateTo(this);
+    }
+
 }
