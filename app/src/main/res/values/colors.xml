@@ -378,4 +378,9 @@
 <color name="repayment_popup_color">#1ffb814d</color>
 <color name="repay_divider_color">#ebebee</color>
 
+    <color name="completed_circle_color">#FFECE2</color>
+    <color name="completed_color">#fb814d</color>
+    <color name="uncompleted_color">#f6f6f6</color>
+    <color name="uncompleted_text_color">#757575</color>
+    <color name="completed_text_color">#373737</color>
 </resources>

@@ -18,6 +18,7 @@ public class BesselView extends View {
     private int mWidth;
     private int mHeight;
     private int mOffsetHeight;
+    private int mOffsetWdith;
     private Paint mPaint;
     private Path mPath;
 
@@ -61,11 +62,15 @@ public class BesselView extends View {
         super.onDraw(canvas);
         mPath.reset();
         mPath.moveTo(0, PULL_HEIGHT);
-        mPath.quadTo(mWidth / 2, mOffsetHeight / 2, mWidth, PULL_HEIGHT);
+        mPath.quadTo(mOffsetWdith, mOffsetHeight / 2, mWidth, PULL_HEIGHT);
         canvas.drawPath(mPath, mPaint);
     }
 
     public void setOffsetHeight(int mOffsetHeight) {
         this.mOffsetHeight = mOffsetHeight;
+    }
+
+    public void setOffsetWdith(int mOffsetWdith) {
+        this.mOffsetWdith = mOffsetWdith;
     }
 }

@@ -17,7 +17,9 @@ import android.widget.FrameLayout;
 
 public class BesselViewLayout extends FrameLayout {
     private static final String TAG = "BesselView";
+    private float mTouchStartX;
     private float mTouchStartY;
+    private float mTouchCurX;
     private float mTouchCurY;
     private BesselView mBesselView;
 
@@ -61,6 +63,9 @@ public class BesselViewLayout extends FrameLayout {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 mTouchStartY = ev.getY();
+                mTouchStartX = ev.getX();
+                mTouchCurX = mTouchStartX;
+                mTouchCurY = mTouchStartY;
                 break;
         }
         return super.onInterceptTouchEvent(ev);
@@ -71,13 +76,19 @@ public class BesselViewLayout extends FrameLayout {
         Log.i(TAG, event.toString());
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
+                mTouchStartX = event.getX();
                 mTouchStartY = event.getY();
+                mTouchCurX = mTouchStartX;
+                mTouchCurY = mTouchStartY;
                 return true;
             case MotionEvent.ACTION_MOVE:
+                mTouchCurX = event.getX();
                 mTouchCurY = event.getY();
+                float dx = mTouchCurX - mTouchStartX;
                 float dy = mTouchCurY - mTouchStartY;
 
-                mBesselView.setOffsetHeight((int) dy * 2);
+                mBesselView.setOffsetWdith((int) mTouchCurX);
+                mBesselView.setOffsetHeight((int) mTouchCurY);
                 mBesselView.invalidate();
 
                 return true;
