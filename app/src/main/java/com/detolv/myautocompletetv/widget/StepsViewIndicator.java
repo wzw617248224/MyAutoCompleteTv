@@ -331,7 +331,6 @@ public class StepsViewIndicator extends View {
             @Override
             public void onAnimationStart(Animator animation) {
                 //确定勾号三个点的坐标
-                isPlayTickAnimation = true;
                 mPath = generatePath(mCenterX, mCenterY, mCircleRadius + padding);
                 PathMeasure measure = new PathMeasure(mPath, false);
                 length = measure.getLength();
@@ -365,6 +364,7 @@ public class StepsViewIndicator extends View {
 
     public void setTickPercent(float tickPercent) {
         if (length != 0){
+            isPlayTickAnimation = true;
             mCompletedTickPaint.setPathEffect(createPathEffect(length, tickPercent));
             invalidate();
         }
