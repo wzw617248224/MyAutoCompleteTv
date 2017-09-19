@@ -318,10 +318,11 @@ public class StepsViewIndicator extends View {
         this.mCompleteIcon = completeIcon;
     }
 
-    public void onPlayAnimation() {
+    public void onPlayAnimation(long startDelay) {
         isPlayAnimation = true;
         ObjectAnimator expandAnimator = ObjectAnimator.ofFloat(this, "expandPercent", 0.0f, 1.0f);
         expandAnimator.setInterpolator(new OvershootInterpolator());
+        expandAnimator.setStartDelay(startDelay);
         expandAnimator.setDuration(500L);
 
         ObjectAnimator tickAnimator = ObjectAnimator.ofFloat(this, "tickPercent", 0.0f, 1.0f);

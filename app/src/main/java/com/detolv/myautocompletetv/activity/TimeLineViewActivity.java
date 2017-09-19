@@ -39,7 +39,7 @@ public class TimeLineViewActivity extends Activity {
             public void run() {
                 stepView.setStepViewTexts(voList);
                 stepView.setStepsViewIndicatorComplectingPosition(2);
-                stepView.startPlayAnimation();
+                stepView.startPlayAnimation(500L);
             }
         }, 21L);
 

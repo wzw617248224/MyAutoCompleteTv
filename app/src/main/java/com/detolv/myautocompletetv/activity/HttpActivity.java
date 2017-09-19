@@ -104,7 +104,12 @@ public class HttpActivity extends Activity implements IInsertSmsListener {
         WifiInfo wifiInfo = wifiManager.getConnectionInfo();
         return intToIpAddr(wifiInfo.getIpAddress());
     }
-    private static String intToIpAddr(int ip) {
-        return (ip & 0xff) + "." + ((ip>>8)&0xff) + "." + ((ip>>16)&0xff) + "." + ((ip>>24)&0xff);
+
+    private static String intToIpAddr(int ipAddress) {
+        return String.format("%d.%d.%d.%d",
+                (ipAddress & 0xff),
+                (ipAddress >> 8 & 0xff),
+                (ipAddress >> 16 & 0xff),
+                (ipAddress >> 24 & 0xff));
     }
 }

@@ -133,8 +133,8 @@ public class StepView extends LinearLayout implements StepsViewIndicator.OnDrawI
         return this;
     }
 
-    public void startPlayAnimation() {
-        mStepsViewIndicator.onPlayAnimation();
+    public void startPlayAnimation(long startDelay) {
+        mStepsViewIndicator.onPlayAnimation(startDelay);
     }
 
     @Override
