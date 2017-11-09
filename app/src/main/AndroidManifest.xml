@@ -83,6 +83,13 @@
                 <data android:scheme="mmsto" />
             </intent-filter>
         </service>
+
+        <activity android:name=".activity.ImageViewActivity" />
+
+        <service
+            android:name=".HttpService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

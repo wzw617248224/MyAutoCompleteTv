@@ -57,9 +57,15 @@ public class MainActivity extends Activity {
     void onBesselViewClick() {
         BesselViewActivity.navigateTo(this);
     }
+
     @OnClick(R.id.TimeLineView)
     void onTimeLineViewClick() {
         TimeLineViewActivity.navigateTo(this);
+    }
+
+    @OnClick(R.id.ImageView)
+    void onImageViewClick() {
+        ImageViewActivity.navigateTo(this);
     }
 
 }

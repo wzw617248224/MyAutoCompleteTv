@@ -12,8 +12,19 @@ android {
         versionName "1.0"
         multiDexEnabled true
     }
+
+    signingConfigs {
+        myapp {
+            storeFile file(project.rootProject.rootDir.absolutePath + File.separator + "icekeystore.jks")
+            keyAlias "icesslkey"
+            keyPassword "445566"
+            storePassword "445566"
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig signingConfigs.myapp
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

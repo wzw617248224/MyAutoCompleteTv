@@ -77,6 +77,13 @@
                 android:textAllCaps="false"
                 android:text="TimeLineView"
                 />
+            <Button
+                android:id="@+id/ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="ImageView"
+                />
     </LinearLayout>
 </ScrollView>
 
