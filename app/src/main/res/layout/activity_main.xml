@@ -84,6 +84,13 @@
                 android:textAllCaps="false"
                 android:text="ImageView"
                 />
+            <Button
+                android:id="@+id/CustomLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="CustomLl"
+                />
     </LinearLayout>
 </ScrollView>
 

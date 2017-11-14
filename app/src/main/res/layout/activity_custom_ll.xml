@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:gravity="center_horizontal|center_vertical"
+    >
+    <com.detolv.myautocompletetv.widget.CustomRadiusLl
+        android:layout_width="@dimen/dimen_82_dip"
+        android:layout_height="@dimen/dimen_85_dip"
+        app:leftTopRadius="@dimen/dimen_3_dip"
+        app:leftBottomRadius="@dimen/dimen_3_dip"
+        app:rightTopRadius="@dimen/dimen_5_dip"
+        app:rightBottomRadius="@dimen/dimen_5_dip"
+        app:leftTopInside="false"
+        app:leftBottomInside="false"
+        app:rightTopInside="true"
+        app:rightBottomInside="true"
+        app:divideLineDirection="RIGHT"
+        app:bgDrawable="@drawable/repayment_money_left_item"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="嘤嘤嘤"
+            />
+    </com.detolv.myautocompletetv.widget.CustomRadiusLl>
+
+    <com.detolv.myautocompletetv.widget.CustomRadiusLl
+        android:layout_width="@dimen/dimen_223_dip"
+        android:layout_height="@dimen/dimen_85_dip"
+        app:leftTopRadius="@dimen/dimen_5_dip"
+        app:leftBottomRadius="@dimen/dimen_5_dip"
+        app:rightTopRadius="@dimen/dimen_3_dip"
+        app:rightBottomRadius="@dimen/dimen_3_dip"
+        app:leftTopInside="true"
+        app:leftBottomInside="true"
+        app:rightTopInside="false"
+        app:rightBottomInside="false"
+        app:bgDrawable="@color/white"
+        >
+    </com.detolv.myautocompletetv.widget.CustomRadiusLl>
+</LinearLayout>

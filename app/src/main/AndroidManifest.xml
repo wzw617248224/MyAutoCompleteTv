@@ -89,7 +89,9 @@
         <service
             android:name=".HttpService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".activity.CustomLlActivity"></activity>
     </application>
 
 </manifest>

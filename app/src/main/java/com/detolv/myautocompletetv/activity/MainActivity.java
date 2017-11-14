@@ -68,4 +68,9 @@ public class MainActivity extends Activity {
         ImageViewActivity.navigateTo(this);
     }
 
+    @OnClick(R.id.CustomLl)
+    void onCustomLlClick() {
+        CustomLlActivity.navigateTo(this);
+    }
+
 }

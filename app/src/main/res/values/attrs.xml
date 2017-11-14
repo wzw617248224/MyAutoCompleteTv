@@ -18,4 +18,21 @@
         <attr name="CircleSmaller" format="integer"/>
     </declare-styleable>
 
+    <declare-styleable name="CustomRadiusLl">
+        <attr name="leftTopRadius" format="dimension"/>
+        <attr name="rightTopRadius" format="dimension"/>
+        <attr name="leftBottomRadius" format="dimension"/>
+        <attr name="rightBottomRadius" format="dimension"/>
+        
+        <attr name="leftTopInside" format="boolean"/>
+        <attr name="rightTopInside" format="boolean"/>
+        <attr name="leftBottomInside" format="boolean"/>
+        <attr name="rightBottomInside" format="boolean"/>
+
+        <attr name="divideLineDirection">
+            <enum name="RIGHT" value="0"/>
+            <enum name="LEFT" value="1"/>
+        </attr>
+        <attr name="bgDrawable" format="reference"/>
+    </declare-styleable>
 </resources>
