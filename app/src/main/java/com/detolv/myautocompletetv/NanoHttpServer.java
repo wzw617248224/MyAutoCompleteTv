@@ -21,7 +21,7 @@ public class NanoHttpServer extends NanoHTTPD {
 
     @Override
     public Response serve(IHTTPSession session) {
-        String msg = "<html><body><h1>短信模拟发送工具</h1>\n";
+        String msg = "<html><head><meta charset=\"utf-8\"></head><body><h1>短信模拟发送工具</h1>\n";
         Map<String, String> parms = session.getParms();
         if (parms.get("phoneNum") == null && parms.get("content") == null) {
             msg += "<form action='?' method='get'>\n  <p>Phone: <input type='text' name='phoneNum'></p>\n";
